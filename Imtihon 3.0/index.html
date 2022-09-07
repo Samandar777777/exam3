@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Pizza</title>
+</head>
+<body>
+  <div class="modal__success">
+    <div class="modal__success__item">
+      <img src="./images/check.png" alt="SUCCESS">
+      <h1>
+        Buyurtmangiz qabul bo'ldi:)
+      </h1>
+      <button id="close">
+        OK
+      </button>
+    </div>
+  </div>
+  <div class="modal__error">
+    <div class="modal__error__item">
+      <img src="./images/cross.png" alt="ERROR">
+      <h1>
+        Buyurtmangiz qabul bo'lmadi:(
+      </h1>
+      <p>
+        Ma'lumotlar to'g'ri to'ldirilmagan
+      </p>
+      <button>
+        OK
+      </button>
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand">Logo</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center">Pitsa buyurtma berish</h1>
+    <div class="row">
+      <div class="col-8 border-end mb-5">
+        <h5>
+          Noni qanday bo'lsin?
+        </h5>
+        <select class="form-select non w-50 mb-5">
+          <option value="Yupqa">Yupqa</option>
+          <option value="Ortacha">O'rtacha</option>
+          <option value="Qalin">Qalin</option>
+        </select>
+        <h5>
+          Kattaligi
+        </h5>
+        <div class="size__wrap mb-5">
+          <div class="size me-5" id="size1">
+            25sm
+          </div>
+          <div class="size me-5" id="size2">
+            30sm
+          </div>
+          <div class="size" id="size3">
+            35sm
+          </div>
+        </div>
+        <h5>
+          Ustiga nima solaylik?
+        </h5>
+        <div class="row mb-5">
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input checkbox__one" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Pomidor
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkbox__two" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Kurka go'shti
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkbox__three" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Zaytun
+              </label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input checkbox__four" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Tuzlangan bodring
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkbox__five" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Qo'ziqorin
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkbox__six" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Qazi
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <h5>
+          Qo'shimchalar
+        </h5>
+        <div class="row mb-5">
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input plus__one" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Achchiq
+              </label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input plus__two" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Sosiskali
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-4 ps-5">
+        <h5 class="mb-5">
+          <span>Non:</span><span class="non__qalinligi"></span>
+        </h5>
+        <h5 class="mb-5">
+          <span>Kattaligi:</span>
+          <span class="kattaligi__area__one"></span>
+        </h5>
+        <h5 class="mb-5">
+          Ustiga: 
+        </h5>
+        <div class="mb-5">
+          <p class="ustiga__list__one"></p>
+          <p class="ustiga__list__two"></p>
+          <p class="ustiga__list__three"></p>
+          <p class="ustiga__list__four"></p>
+          <p class="ustiga__list__five"></p>
+          <p class="ustiga__list__six"></p>
+        </div>
+        <h5 class="mb-5">
+          Qo'shimcha:
+        </h5>
+        <div class="mb-5">
+          <p class="plus__list__one"></p>
+          <p class="plus__list__two"></p>
+        </div>
+        <button class="danger__btn mb-5">Buyurtma berish</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</body>
+<script src="./plugin.js"></script>
+<script src="./script.js"></script>
+</html>
